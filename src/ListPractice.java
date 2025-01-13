@@ -2,26 +2,50 @@ public class ListPractice {
 
 
   public static void main(String[] args) {
-    // Create an empty ArrayList of Strings and assign it to a variable of type List
+        // Create an empty ArrayList of Strings and assign it to a variable of type List
+        ArrayList<String> list = new ArrayList<String>();
 
-    // Add 3 elements to the list (OK to do one-by-one)
+        // Add 3 elements to the list (OK to do one-by-one)
+        list.add("one");
+        list.add("two");
+        list.add("three");
 
-    // Print the element at index 1
+        // Print the element at index 1
+        System.out.println(list.get(1));
 
-    // Replace the element at index 1 with a new value
-    // (Do not insert a new value. The length of the list should not change)
+        // Replace the element at index 1 with a new value
+        // (Do not insert a new value. The length of the list should not change)
+        list.set(1,"dos");
+        System.out.println("list: " + list);
 
-    // Insert a new element at index 0 (the length of the list will change)
+        // Insert a new element at index 0 (the length of the list will change)
+        list.add(0,"zero");
+        System.out.println("list: " + list);
 
-    // Check whether the list contains a certain string
+        // Check whether the list contains a certain string
+        if(list.contains("three"))
+        {
+            System.out.println("It contains that value!");
+        }
 
-    // Iterate over the list using a traditional for-loop.
-    // Print each index and value on a separate line
+        // Iterate over the list using a traditional for-loop.
+        // Print each index and value on a separate line
 
-    // Sort the list using the Collections library
+        for(int i = 0; i < list.size(); i++)
+        {
+            System.out.println(i+".) " + list.get(i));
+        }
 
-    // Iterate over the list using a for-each loop
-    // Print each value on a second line
+        // Sort the list using the Collections library
+        Collections.sort(list);
+
+        // Iterate over the list using a for-each loop
+        // Print each value on a second line
+        for(String i : list)
+        {
+            System.out.println(i);
+        }
+
 
     /*
      * Usage tip!
