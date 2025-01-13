@@ -1,3 +1,4 @@
+//Shawn Nguru
 public class NumberPractice {
   public static void main(String args[]) {
         // Create a float with a negative value and assign it to a variable
